@@ -1,0 +1,184 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-03-01T07:16:32.816Z",
+    "end": "2022-03-01T07:17:17.676Z",
+    "duration": 37813,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9d0973bc-0cb5-4c25-9406-3c5747d1948a",
+      "title": "",
+      "fullFile": "cypress/integration/getting-started/login.js",
+      "file": "cypress/integration/getting-started/login.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "login test successfuly",
+          "fullTitle": "login test successfuly",
+          "timedOut": null,
+          "duration": 14492,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.login(this.key.email, this.key.password);\ncy.verifing(this.key.id_header);",
+          "err": {},
+          "uuid": "88258753-42bf-4707-8145-47e48ebf22ed",
+          "parentUUID": "9d0973bc-0cb5-4c25-9406-3c5747d1948a",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "login test failed case mobile/email is wrong",
+          "fullTitle": "login test failed case mobile/email is wrong",
+          "timedOut": null,
+          "duration": 5663,
+          "state": "passed",
+          "speed": "medium",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.login(this.key.wrong_user_name, this.key.password);\ncy.verifing(this.key.id_login_error);",
+          "err": {},
+          "uuid": "c5eddcb4-33b2-48cb-9e2b-21d2306a985e",
+          "parentUUID": "9d0973bc-0cb5-4c25-9406-3c5747d1948a",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "login test failed case password is wrong",
+          "fullTitle": "login test failed case password is wrong",
+          "timedOut": null,
+          "duration": 3794,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.login(this.key.email, this.key.wrong_password);\ncy.verifing(this.key.id_error_register);",
+          "err": {},
+          "uuid": "7123397b-d43f-4973-9bec-d9ae9613926f",
+          "parentUUID": "9d0973bc-0cb5-4c25-9406-3c5747d1948a",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "login test failed mobile/email is empty",
+          "fullTitle": "login test failed mobile/email is empty",
+          "timedOut": null,
+          "duration": 5065,
+          "state": "passed",
+          "speed": "medium",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.login_empty_username('', this.key.password);\ncy.verifing(this.key.id_login_error);",
+          "err": {},
+          "uuid": "e3c59de8-3a2b-4027-8a5f-447de1c4212c",
+          "parentUUID": "9d0973bc-0cb5-4c25-9406-3c5747d1948a",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "login test failed password is empty",
+          "fullTitle": "login test failed password is empty",
+          "timedOut": null,
+          "duration": 4509,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.login_empty_password(this.key.email, '');\ncy.verifing(this.key.id_password_error);",
+          "err": {},
+          "uuid": "429ce848-8a42-4004-9218-618d5506c3b0",
+          "parentUUID": "9d0973bc-0cb5-4c25-9406-3c5747d1948a",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "login test failed case password not valid",
+          "fullTitle": "login test failed case password not valid",
+          "timedOut": null,
+          "duration": 4290,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.login(this.key.email, this.key.invalid_password);\ncy.verifing(this.key.id_password_error);",
+          "err": {},
+          "uuid": "081fd73c-303d-4da9-859e-6bff0b503351",
+          "parentUUID": "9d0973bc-0cb5-4c25-9406-3c5747d1948a",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "88258753-42bf-4707-8145-47e48ebf22ed",
+        "c5eddcb4-33b2-48cb-9e2b-21d2306a985e",
+        "7123397b-d43f-4973-9bec-d9ae9613926f",
+        "e3c59de8-3a2b-4027-8a5f-447de1c4212c",
+        "429ce848-8a42-4004-9218-618d5506c3b0",
+        "081fd73c-303d-4da9-859e-6bff0b503351"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 37813,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "video": false
+      },
+      "version": "6.0.1"
+    }
+  }
+}

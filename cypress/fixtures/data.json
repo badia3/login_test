@@ -1,0 +1,17 @@
+{
+    "email": "98013711",
+    "wrong_user_name":"980137110",
+
+
+    "password":"Venom007",
+    "wrong_password":"Venom0071",
+    "invalid_password":"7777777777777777777777777777",
+
+
+    "empty":"",
+    "id_header":".header_username",
+    "id_login_error":"#user_login-error",
+    "id_error_register":".text_align_error_register",
+    "id_password_error":"#user_password-error"
+    
+}

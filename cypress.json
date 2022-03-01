@@ -1,0 +1,29 @@
+{
+"baseUrl":"http://en.mzadqatar.com",
+"chromeWebSecurity":false,
+
+
+
+
+
+
+
+
+    "viewportWidth": 1480,
+  "viewportHeight": 1080,
+    "integrationFolder":"cypress/integration/getting-started",
+    "screenshotsFolder": "cypress/reports/mochareports/assets",
+    "screenshotOnRunFailure":true,
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+        "reporterEnabled": "mochawesome",
+        "mochawesomeReporterOptions": {
+            "reportDir": "cypress/reports/mocha",
+            "quite": true,
+            "overwrite": false,
+            "html": true,
+            "json": true,
+            "video":false
+        }
+    }
+}
